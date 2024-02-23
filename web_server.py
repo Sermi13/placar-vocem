@@ -4,12 +4,9 @@ import requests
 from bs4 import BeautifulSoup
 
 app = Flask(__name__)
-url = 'https://www.futebolinterior.com.br/campeonato/paulista-a4-2024/'
-
-print(url)
 @app.route('/')
 def get_soup():
-    url = 'https://www.futebolinterior.com.br/campeonato/campeonato-paulista-2a-divisao-2023/'
+    url = 'https://www.futebolinterior.com.br/campeonato/paulista-a4-2024/'
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"}
     site = requests.get(url, headers=headers)
