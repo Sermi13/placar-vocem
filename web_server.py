@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 app = Flask(__name__)
-url = 'https://www.futebolinterior.com.br/campeonato/campeonato-paulista-2a-divisao-2023/'
+url = 'https://www.futebolinterior.com.br/campeonato/paulista-a4-2024/'
 
 
 @app.route('/')
